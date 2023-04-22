@@ -1,2 +1,5 @@
-from datetime import date as dt
-print(f'{dt.ctime}:: Successfully run main')
+from datetime import date as date
+from datetime import datetime
+today: date = date.today()
+time: datetime = datetime.now()
+print(f'{today} {time.strftime("%H:%M")}  :: Successfully run main')
