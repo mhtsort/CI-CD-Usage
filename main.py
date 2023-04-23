@@ -11,3 +11,11 @@ cat_ascii = '''
      \\~---~/
 '''
 print(cat_ascii)
+with open("README.md","rb") as file:
+    data = file.read(-1)
+    print(type(int(data)))
+    print(data[2:].decode(encoding="utf-8"))
+    print(bin(data))
+    # Print the binary representation of data
+    binary_data = ''.join(format(byte, '08b') for byte in data)
+    print(binary_data)
